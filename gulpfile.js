@@ -17,6 +17,7 @@ const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
+const sourcemaps = require('gulp-sourcemaps');
 
 
 /* Paths */
@@ -79,6 +80,7 @@ function html(cb) {
 
 function css(cb) {
     return src(path.src.css, {base: srcPath + "assets/scss/"})
+        .pipe(sourcemaps.init())
         .pipe(plumber({
             errorHandler : function(err) {
                 notify.onError({
@@ -107,6 +109,7 @@ function css(cb) {
             suffix: ".min",
             extname: ".css"
         }))
+        .pipe(sourcemaps.write('./'))
         .pipe(dest(path.build.css))
         .pipe(browserSync.reload({stream: true}));
 

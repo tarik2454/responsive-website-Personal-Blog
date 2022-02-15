@@ -1,8 +1,8 @@
 {
-    "name": "brainscloud",
+    "name": "tarik2454",
     "version": "1.0.0",
-    "description": "brainscloud",
-    "author": "brainscloud",
+    "description": "tarik2454",
+    "author": "tarik2454",
     "devDependencies": {
         "@babel/core": "^7.17.2",
         "@babel/preset-env": "^7.16.11",
@@ -26,7 +26,8 @@
         "panini": "^1.7.2",
         "sass": "^1.49.7",
         "webpack": "^5.68.0",
-        "webpack-stream": "^7.0.0"
+        "webpack-stream": "^7.0.0",
+        "gulp-sourcemaps": "^3.0.0"
     },
     "browserslist": [
         "last 1 version",
