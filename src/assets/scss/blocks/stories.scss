@@ -10,7 +10,7 @@
     overflow: hidden;
     position: relative;
 
-    border-radius: 6px;
+    border-radius: 5px;
     box-shadow: 0 5px 15px rgba($black, 0.2);
     cursor: pointer;
 
@@ -35,7 +35,7 @@
     &:hover {
         .stories__preview {
             transform: scale(1.1);
-            transition-duration: 3s;
+            transition-duration: 2s;
         }
     }
 }
@@ -51,7 +51,8 @@
     left: 0;
     z-index: 1;
 
-    transition: transform 2s ease-in-out;
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
 }
 
 .stories__title,
