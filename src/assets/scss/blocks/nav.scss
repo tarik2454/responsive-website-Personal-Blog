@@ -6,7 +6,8 @@
     position: relative;
 
     &:hover {
-        .nav__link {          
+        .nav__link { 
+            text-decoration: none;         
             background-color: $blue;          
         }
 

@@ -21,6 +21,14 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 
 /* Blocks */
 @import "blocks/page";
@@ -39,6 +47,10 @@ body {
 @import "blocks/btn";
 @import "blocks/embed";
 @import "blocks/pagination";
+@import "blocks/related";
+@import "blocks/comments";
+@import "blocks/form";
+
 
 
 
