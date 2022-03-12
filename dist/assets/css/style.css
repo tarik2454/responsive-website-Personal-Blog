@@ -733,6 +733,14 @@ a:hover {
     margin-bottom: 0;
 }
 
+.post__subtitle {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 500;
+}
+
 .post__description {
     font-size: 1.4rem;
     color: #D2D2D2;
@@ -986,6 +994,14 @@ a:hover {
     background-color: #2c31b4;
 }
 
+.btn--rounded {
+    border-radius: 0.41em;
+}
+
+.btn--sm {
+    padding: 0.7em 1.25em;
+}
+
 .embed,
 .fr-video {
     display: block;
@@ -1053,16 +1069,8 @@ a:hover {
 }
 
 .related {
-    padding: 3rem 0 0.5rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid #1C1C1C;
-}
-
-.related__title {
-    margin-bottom: 2rem;
-    font-size: 1.6rem;
-    line-height: 1.3;
-    color: #fff;
-    font-weight: 500;
 }
 
 .related__list {
@@ -1093,4 +1101,130 @@ a:hover {
 .related__list-date {
     font-size: 1.2rem;
     color: #828282;
+}
+
+.comments {
+    margin-top: 5rem;
+}
+
+.comments__item {
+    margin-bottom: 3rem;
+}
+
+.comments__item > .comments {
+    padding-left: 3rem;
+    margin-top: 3rem;
+}
+
+.comments__header {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.comments__avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.comments__author {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.comments__name {
+    color: #fff;
+    font-weight: 500;
+}
+
+.comments__pubdate {
+    color: #757575;
+}
+
+.comments__text {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+    -webkit-columns: #fff;
+    -moz-columns: #fff;
+    columns: #fff;
+}
+
+.comments__replay {
+    padding: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.1;
+    color: #3137C9;
+}
+
+.comments__replay:hover {
+    text-decoration: underline;
+}
+
+.form__group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form__control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #3F3F3F;
+    border-radius: 0;
+    box-shadow: none;
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.form__control::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.form__control--textarea {
+    height: 30px;
+    overflow: hidden;
+    resize: none;
+}
+
+.form__control:focus + .form__line {
+    width: 100%;
+}
+
+.form__line {
+    width: 0;
+    height: 1px;
+    background-color: #3137C9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: width 0.2s linear;
 }
