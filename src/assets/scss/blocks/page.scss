@@ -1,4 +1,8 @@
 .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -6,4 +10,8 @@
    margin-bottom: 3rem;
    font-size: 2.1rem;
    color: $white;
+
+   &--center {
+       text-align: center;
+   }
 }
