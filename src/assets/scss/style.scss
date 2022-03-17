@@ -13,6 +13,10 @@ body {
     line-height: 1.5;
     // letter-spacing: 0.02rem;
     color: $white;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 *,
@@ -53,6 +57,7 @@ a {
 @import "blocks/work";
 @import "blocks/tags";
 @import "blocks/cabinet";
+@import "blocks/modal";
 
 
 

@@ -388,6 +388,13 @@ a:hover {
 
 /* Blocks */
 .page {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -395,6 +402,10 @@ a:hover {
     margin-bottom: 3rem;
     font-size: 2.1rem;
     color: #fff;
+}
+
+.page__title--center {
+    text-align: center;
 }
 
 .header {
@@ -1178,6 +1189,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.form--auth {
+    min-width: 28rem;
+    margin: 0 auto;
+}
+
 .form__group {
     margin-bottom: 1.5rem;
     position: relative;
@@ -1240,6 +1256,27 @@ a:hover {
     bottom: 0;
     z-index: 1;
     transition: width 0.2s linear;
+}
+
+.form__footer--center {
+    text-align: center;
+}
+
+.form__footer-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.form__footer-list li {
+    margin: 0 0.5rem;
+}
+
+.form__footer-list a {
+    color: #fff;
 }
 
 .work {
@@ -1315,4 +1352,43 @@ a:hover {
     line-height: 1.3;
     color: #fff;
     text-align: center;
+}
+
+.cabinet {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.cabinet__form {
+    width: 34rem;
+}
+
+.cabinet__avatar {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-left: 11rem;
+}
+
+.cabinet__avatar img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.cabinet__file {
+    font-size: 1.4rem;
+    color: #3137C9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cabinet__file input {
+    display: none;
+}
+
+.cabinet__file:hover {
+    text-decoration: none;
 }
