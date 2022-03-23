@@ -1,7 +1,7 @@
 .form {
 
     &--auth {
-        min-width: 28rem;
+        max-width: 28rem;
         margin: 0 auto;
     }
 }
@@ -34,14 +34,14 @@
         color: rgba($white, 0.2);
     }
     
+    &:focus + .form__line {
+        width: 100%;
+    }
+
     &--textarea {
         height: 30px;
         overflow: hidden;
         resize: none;
-    }
-
-    &:focus + .form__line {
-        width: 100%;
     }
 }
 

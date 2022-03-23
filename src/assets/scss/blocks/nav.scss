@@ -1,11 +1,16 @@
 .nav {
-    @include breakpoint($tablet-bp) {
-        display: none;
-    }
 
     &--mobile {
-        display: block;
+        display: none;
         margin: 3rem 0;
+    }
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+
+        &--mobile {
+            display: block;
+        }
     }
 }
 
@@ -22,8 +27,8 @@
 
     &:hover {
         .nav__link { 
+            background-color: $blue; 
             text-decoration: none;         
-            background-color: $blue;          
         }
 
         > .subnav {
@@ -55,7 +60,6 @@
     &.has-subnav {
         position: relative;
         padding-right: 3.5rem;
-        font-size: 1.5rem;
 
         &:after {
             content: "";

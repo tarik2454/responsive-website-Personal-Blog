@@ -4,6 +4,11 @@
     gap: 13px;
     grid-auto-rows: 195px;
     margin-bottom: 3rem;
+
+    @include breakpoint($mobile-bp) {
+        grid-template-columns: repeat(4, 140px);
+        overflow: auto;
+    }
 }
 
 .stories__item {
