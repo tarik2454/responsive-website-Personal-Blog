@@ -22,7 +22,10 @@
 
 .subnav__link {
     display: block;
-    padding: 0.45rem 1.2rem;
+    // padding: 0.45rem 1.2rem;
+    padding: 0 1.2rem;
+    padding-top: 0.20rem;
+    padding-bottom: 0.45rem;
     font-size: 1.2rem;
     color: $white;
     text-decoration: none;
@@ -37,6 +40,7 @@
     @include breakpoint($tablet-bp) {
         padding-left: 0;
         padding-right: 0;
+        font-size: 1.5rem;
 
         &:hover {
             background: none;

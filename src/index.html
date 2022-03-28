@@ -5,22 +5,22 @@ title: Home
 
 <!-- Stories -->
 <div class="stories">
-    <div class="stories__item">
+    <div class="stories__item" data-modal="story-modal">
         <img class="stories__preview" src="assets/images/stories/stories-1.jpg" alt="">
         <div class="stories__title">Отдыхаю на природе</div>
         <time class="stories__date" datetime="2020-09-21 19.21">21.09.2022</time>
     </div>
-    <div class="stories__item">
+    <div class="stories__item" data-modal="story-modal">
         <img class="stories__preview" src="assets/images/stories/stories-2.jpg" alt="">
         <div class="stories__title">Заканчиваю сложный проект</div>
         <time class="stories__date" datetime="2020-09-21 19.21">21.09.2022</time>
     </div>
-    <div class="stories__item">
+    <div class="stories__item" data-modal="story-modal">
         <img class="stories__preview" src="assets/images/stories/stories-3.jpg" alt="">
         <div class="stories__title">Переехал в новую квартиру</div>
         <time class="stories__date" datetime="2020-09-21 19.21">21.09.2022</time>
     </div>
-    <div class="stories__item">
+    <div class="stories__item" data-modal="story-modal">
         <img class="stories__preview" src="assets/images/stories/stories-4.jpg" alt="">
         <div class="stories__title">Осень пришла!</div>
         <time class="stories__date" datetime="2020-09-21 19.21">21.09.2022</time>
@@ -31,7 +31,7 @@ title: Home
 <!-- Add post -->
 <div class="add-post">
     <form class="add-post__form" action="/" method="post">
-        <textarea class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь"></textarea>
+        <textarea class="add-post__textarea" name="post-text" placeholder="Напишите что-нибудь" data-autoresize></textarea>
 
         <div class="add-post__form-actions">
             <label class="add-post__file" for="add-post-file">
@@ -64,11 +64,11 @@ title: Home
 <!-- Post -->
 <article class="post">
     <div class="post__header post__header--preview">
-        <a href="#"><img class="post__preview" src="assets/images/post/post-2.jpg" alt="Как писать код быстро и безболезненно?"></a>
+        <a href="post.html"><img class="post__preview" src="assets/images/post/post-2.jpg" alt="Как писать код быстро и безболезненно?"></a>
     </div>
     <div class="post__content">
         <h2 class="post__title">
-            <a href="#">Как писать код быстро и безболезненно?</a>
+            <a href="post.html">Как писать код быстро и безболезненно?</a>
         </h2>
         <p class="post__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint velit voluptates nesciunt quo ducimus perspiciatis aperiam asperiores? Expedita consectetur, quaerat dolores maxime ut pariatur dicta, architecto, dolorum a nemo nihil repellendus?
@@ -81,11 +81,11 @@ title: Home
                 <time datetime="2022-02-23 18:09">23.02.2022</time>
             </li>
             <li class="post__data-item">
-                <a href="#">Создание сайтов</a>
+                <a href="post.html">Создание сайтов</a>
             </li>
         </ul>
 
-        <a href="#" class="post__read">читать</a>
+        <a href="post.html" class="post__read">Читать</a>
     </div>
 </article><!-- /.post -->
 
@@ -98,7 +98,7 @@ title: Home
     </div>
     <div class="post__content">
         <h2 class="post__title">
-            <a href="#">Купил новый ноутбук за 150 000 рублей</a>
+            <a href="post.html">Купил новый ноутбук за 150 000 рублей</a>
         </h2>
     </div>
 
@@ -108,11 +108,11 @@ title: Home
                 <time datetime="2022-02-23 18:09">23.02.2022</time>
             </li>
             <li class="post__data-item">
-                <a href="#">Продвижение видео</a>
+                <a href="post.html">Продвижение видео</a>
             </li>
         </ul>
 
-        <a href="#" class="post__read">оставить комментарий</a>
+        <a href="post.html" class="post__read">Оставить комментарий</a>
     </div>
 </article><!-- /.post -->
 
@@ -136,11 +136,11 @@ title: Home
                 <time datetime="2022-02-23 18:09">23.02.2022</time>
             </li>
             <li class="post__data-item">
-                <a href="#">Конференции</a>
+                <a href="post.html">Конференции</a>
             </li>
         </ul>
 
-        <a href="post.html" class="post__read">читать</a>
+        <a href="post.html" class="post__read">Читать</a>
     </div>
 </article><!-- /.post -->
 

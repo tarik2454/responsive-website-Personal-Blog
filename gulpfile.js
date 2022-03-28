@@ -52,7 +52,6 @@ const path = {
 
 
 /* Tasks */
-
 function serve() {
     browserSync.init({
         server: {
