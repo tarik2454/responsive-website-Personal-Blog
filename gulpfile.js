@@ -18,6 +18,7 @@ const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
 const sourcemaps = require('gulp-sourcemaps');
+var ghPages = require('gulp-gh-pages');
 
 
 /* Paths */
@@ -229,6 +230,11 @@ function clean(cb) {
 
     cb();
 }
+
+gulp.task('deploy', function() {
+    return gulp.src('./dist/**/*')
+      .pipe(ghPages());
+  });
 
 function watchFiles() {
     gulp.watch([path.watch.html], html);
