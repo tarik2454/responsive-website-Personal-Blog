@@ -36,7 +36,7 @@
         background-color: $blue;
         box-shadow: 0 7px 17px -10px rgba($blue, 0.3);
 
-        &:hover
+        &:hover,
         &:focus {
             background-color: darken($blue, 5%);
         }
