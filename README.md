@@ -5,9 +5,11 @@ Project Link: [https://tarik2454.github.io/responsive-website-Personal-Blog/](ht
 ## Technologies used:
 
 * HTML
-* CSS(SCSS)
-* JS
+* CSS
+* SCSS
 * Gulp
+* JavaScript
+
 
 ## Contact:
 
