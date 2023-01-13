@@ -232,8 +232,7 @@ function clean(cb) {
 }
 
 gulp.task('deploy', function() {
-    return gulp.src('./dist/**/*')
-      .pipe(ghPages());
+    return gulp.src('./dist/**/*').pipe(ghPages());
   });
 
 function watchFiles() {
